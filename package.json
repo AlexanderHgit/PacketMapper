@@ -1,0 +1,12 @@
+{
+  "name": "packet-mapper",
+  "version": "1.0.0",
+  "description": "USB packet inspector + input mapper",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^28.0.0"
+  }
+}

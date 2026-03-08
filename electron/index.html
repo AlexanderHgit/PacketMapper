@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USB Device Selector</title>
+
+
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'sha256-daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes/sHA='; style-src 'self' 'unsafe-inline';">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<h2>USB Devices</h2>
+<div id="devices"></div>
+
+<hr>
+
+<h2>Live Packet</h2>
+<div id="packet"></div>
+
+<hr>
+
+<h2>Add Mapping</h2>
+<p>
+Byte:
+<select id="byteSelect"></select>
+
+Bit:
+<select id="bitSelect">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+</select>
+
+Key:
+<input id="keyInput" placeholder="e.g. a, space, enter">
+
+<button id="addBtn">Add Mapping</button>
+</p>
+
+<hr>
+
+<h2>Mappings:</h2>
+<button id="loadMappingsBtn">Load Mappings</button>
+<button id="saveMappingsBtn">Save Mappings</button>
+
+<div id="mappings"></div>
+
+<hr>
+
+<script  src="frontend.js">
+
+</script>
+
+</body>
+</html>
